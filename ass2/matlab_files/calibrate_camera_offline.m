@@ -1,5 +1,5 @@
 
-tmpsnapshot = F_1(1).cdata;
+tmpsnapshot = imread('c.jpg');
 
 % Flip the image Up-Down
 snapshot = imflipud( tmpsnapshot );

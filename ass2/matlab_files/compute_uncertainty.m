@@ -8,6 +8,6 @@ function sigma_dist = compute_uncertainty( rho, sigma_rho, alpha, height );
 
 %--------------------------------------------------------------------------
 
-sigma_dist = 
+sigma_dist = ((height/alpha) * (1 + tan(rho/alpha).^2 )) * sigma_rho;
 
 %--------------------------------------------------------------------------
