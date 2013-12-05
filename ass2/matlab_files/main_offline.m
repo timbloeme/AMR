@@ -39,7 +39,8 @@ for i=1:1
     snapshot = imread('c.jpg');
     snapshot = imflipud(snapshot);
     
-    %calibrate_camera_offline;
+    %calibrate_camera_offline;  %we used this to get the points of the
+                                %picture.
     
     
     [undistortedimg, theta] = imunwrap(snapshot, center, angstep, Rmax, Rmin);
